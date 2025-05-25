@@ -6,6 +6,14 @@
   <title>FunStudy World</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    .boton-descarga.deshabilitado {
+      background-color: #888;
+      cursor: not-allowed;
+      opacity: 0.6;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -19,80 +27,78 @@
     </nav>
   </header>
 
- <!-- INICIO -->
-<section class="seccion-video" id="inicio">
-  <video autoplay muted loop class="video-fondo">
-    <source src="Videos/fondo1.mp4" type="video/mp4" />
-  </video>
-  <div class="contenido">
-    <h2>Little Scouth ha encontrado una nueva misión</h2>
-    <p>¿Estás listo para aventurarte?</p>
-    <a href="#descargar" class="boton-descargar">Descargar ahora</a>
-  </div>
-</section>
+  <!-- INICIO -->
+  <section class="seccion-video" id="inicio">
+    <video autoplay muted loop class="video-fondo">
+      <source src="Videos/fondo1.mp4" type="video/mp4" />
+    </video>
+    <div class="contenido">
+      <h2>Little Scouth ha encontrado una nueva misión</h2>
+      <p>¿Estás listo para aventurarte?</p>
+      <a href="#descargar" class="boton-descargar">Descargar ahora</a>
+    </div>
+  </section>
 
+  <!-- DESCARGAR -->
+  <section class="seccion-video" id="descargar">
+    <video autoplay muted loop class="video-fondo">
+      <source src="Videos/fondo2.mp4" type="video/mp4" />
+    </video>
+    <div class="contenido">
+      <h2>Descarga FunStudy World</h2>
+      <p>Selecciona tu sistema operativo para empezar a jugar y aprender:</p>
+      
+      <div class="plataformas">
+        <div class="plataforma">
+          <h3>Windows</h3>
+          <p>Compatible con Windows 10/11. Requiere 2 GB de RAM y tarjeta gráfica integrada.</p>
+          <a href="https://drive.google.com/uc?export=download&id=1-YMeUc2DW-rOUxTeKENJ6bn7SkeR0Ygh" class="boton-descarga" target="_blank">Descargar para Windows</a>
+        </div>
 
- <!-- DESCARGAR -->
-<section class="seccion-video" id="descargar">
-  <video autoplay muted loop class="video-fondo">
-    <source src="Videos/fondo2.mp4" type="video/mp4" />
-  </video>
-  <div class="contenido">
-    <h2>Descarga FunStudy World</h2>
-    <p>Selecciona tu sistema operativo para empezar a jugar y aprender:</p>
-    
-    <div class="plataformas">
-      <div class="plataforma">
-        <h3>Windows</h3>
-        <p>Compatible con Windows 10/11. Requiere 2 GB de RAM y tarjeta gráfica integrada.</p>
-        <a href="descargas/windows.exe" class="boton-descarga">Descargar para Windows</a>
-      </div>
+        <div class="plataforma">
+          <h3>macOS</h3>
+          <p>Próximamente disponible para macOS.</p>
+          <span class="boton-descarga deshabilitado">Próximamente</span>
+        </div>
 
-      <div class="plataforma">
-        <h3>macOS</h3>
-        <p>Compatible con macOS 10.15 en adelante. Optimizado para chips M1 y superiores.</p>
-        <button class="boton-descarga" disabled>Próximamente</button>
-      </div>
+        <div class="plataforma">
+          <h3>Linux</h3>
+          <p>Próximamente disponible para Linux.</p>
+          <span class="boton-descarga deshabilitado">Próximamente</span>
+        </div>
 
-      <div class="plataforma">
-        <h3>Linux</h3>
-        <p>Disponible en formato AppImage. Compatible con la mayoría de distribuciones modernas.</p>
-        <button class="boton-descarga" disabled>Próximamente</button>
-      </div>
+        <div class="plataforma">
+          <h3>Android</h3>
+          <p>Próximamente disponible para Android.</p>
+          <span class="boton-descarga deshabilitado">Próximamente</span>
+        </div>
 
-      <div class="plataforma">
-        <h3>Android</h3>
-        <p>Disponible para Android 7.0 o superior. APK directo sin necesidad de Google Play.</p>
-        <button class="boton-descarga" disabled>Próximamente</button>
-      </div>
-
-      <div class="plataforma">
-        <h3>iOS</h3>
-        <p>Compatible con iOS 14+. Requiere instalación vía TestFlight o perfil firmado.</p>
-        <button class="boton-descarga" disabled>Próximamente</button>
+        <div class="plataforma">
+          <h3>iOS</h3>
+          <p>Próximamente disponible para iOS.</p>
+          <span class="boton-descarga deshabilitado">Próximamente</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- CONTACTO -->
-<section class="seccion-video" id="contacto">
-  <video autoplay muted loop class="video-fondo">
-    <source src="Videos/fondo3.mp4" type="video/mp4" />
-  </video>
-  <div class="contenido">
-    <h2>Contáctanos</h2>
-    <p>¿Tienes preguntas, sugerencias o necesitas soporte? ¡Estamos aquí para ayudarte!</p>
-    
-    <form class="formulario-contacto" action="mailto:soporte@funstudyworld.com" method="post" enctype="text/plain">
-      <input type="text" name="nombre" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu correo electrónico" required>
-      <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-      <button type="submit">Enviar mensaje</button>
-    </form>
-  </div>
-</section>
+  <!-- CONTACTO -->
+  <section class="seccion-video" id="contacto">
+    <video autoplay muted loop class="video-fondo">
+      <source src="Videos/fondo3.mp4" type="video/mp4" />
+    </video>
+    <div class="contenido">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes preguntas, sugerencias o necesitas soporte? ¡Estamos aquí para ayudarte!</p>
+      
+      <form class="formulario-contacto" action="mailto:soporte@funstudyworld.com" method="post" enctype="text/plain">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
 
 </body>
 </html>

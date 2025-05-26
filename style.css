@@ -60,6 +60,7 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+ filter: brightness(1.75);
 }
 
 .contenido {
